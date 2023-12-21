@@ -15,6 +15,10 @@ header {
     gap: 10px; 
     display: inline-flex;
 }
+a {
+    text-decoration: none;
+  }
+
 .topnav {
     overflow: hidden;
     justify-content: center; 
@@ -264,6 +268,28 @@ h6, p {
 }
 .button-circle-1:hover {
     background: #565272; 
+}
+
+.button-circle-2 {
+    padding:12px; 
+    background: #E8E7F0; 
+    box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
+    border-radius: 100%; 
+    border: none;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    color: #1A135A;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+.button-circle-2:hover {
+    background: #C9C7D6; 
 }
 .hero-home {
     width: 94%; 
