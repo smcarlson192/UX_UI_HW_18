@@ -15,14 +15,46 @@ header {
     gap: 10px; 
     display: inline-flex;
 }
+.topnav {
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center; 
+    gap: 24px;
+    display: inline-flex;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #1A135A;
+    align-items: center; 
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase; 
+    word-wrap: break-word;
+    display: inline-flex;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid #565272;
+    color:#565272;
+    text-decoration: none;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid #1A135A;
+    text-decoration: none;
+  }
 
 ul {
     display: block;
     list-style-type: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    float: right;
     padding-inline-start: 24px;
     font-family: Hind; 
     text-transform: uppercase;
@@ -31,7 +63,7 @@ ul {
 }
 
 li {
-    text-align: center;
+    display: block;
     padding: 24px;
     color:#1A135A;
 }
@@ -39,6 +71,9 @@ li {
 li:hover {
     font-weight: 700;
     font-size: 19px;
+}
+.liactive {
+    border-bottom: 3px;
 }
 
 .navbar {
@@ -192,7 +227,8 @@ h6, p {
     font-family: Open Sans;
     font-weight: 600;
     text-transform: uppercase;
-    word-wrap: break-word
+    word-wrap: break-word;
+    text-decoration: none;
 }
 .button-1:hover {
     padding-left: 24px; 
@@ -207,6 +243,27 @@ h6, p {
     gap: 10px; 
     display: flex;
     font-weight: 700;
+}
+.button-circle-1 {
+    padding:12px; 
+    background: #1A135A; 
+    box-shadow: 0px 2px 4px rgba(51, 76, 92, 0.30); 
+    border-radius: 100%; 
+    border: none;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+.button-circle-1:hover {
+    background: #565272; 
 }
 .hero-home {
     width: 94%; 
@@ -288,13 +345,6 @@ footer {
     flex-direction: column; 
     justify-content: space-between; 
     align-items: flex-start; 
-    display: inline-flex;
-}
-.follow-column {
-    width: 377px; 
-    justify-content: space-between; 
-    align-items: center; 
-    gap: 24px; 
     display: inline-flex;
 }
 .copyright {
