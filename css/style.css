@@ -501,9 +501,9 @@ footer {
 .grid-container1 {
     display: grid;
     grid-template-areas:
-  'CCftA SampleGenius PAWS'
-  'TravelGlass TBD UXSkills';
-    grid-template-columns: auto auto auto;
+    'CCftA SampleGenius PAWS'
+    'TravelGlass TBD UXSkills';
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 24px;
     background-color: #ffffff;
     padding-left: 48px;
@@ -512,7 +512,7 @@ footer {
 
 .grid-item, .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
     background-color: #ffffff;
-    width: 536px;
+    min-width: 536px;
     border: none;
     padding: 24px;
     font-size: 24px;
@@ -544,9 +544,9 @@ footer {
 .grid-container2 {
     display: grid;
     grid-template-areas:
-  'OPTO LA HRP'
-  'ABBV PFI PF'
-  'SG ABBVV GDSkills';
+    'OPTO LA HRP'
+    'ABBV PFI PF'
+    'SG ABBVV GDSkills';
     grid-template-columns: auto auto auto;
     background-color: #ffffff;
     padding-left: 48px;
@@ -554,18 +554,29 @@ footer {
 }
 @media only screen and (max-width:600){
     .grid-container1 {
-        display: grid;
+        grid-template-rows:  auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
         grid-template-areas:
         'CCftA'
         'SampleGenius'
         'PAWS'
         'TravelGlass' 
         'TBD' 
-        'UXSkills';
-        grid-template-rows: 512px 512px 512px 512px 512px 512px;
-        grid-template-columns: auto;
-        background-color: #ffffff;
-        padding-left: 48px;
-        padding-right: 48px;
+        'UXSkills' !important;
+    }
+    .grid-container2 {
+        display: grid;
+        grid-template-areas:
+        'OPTO'
+        'LA' 
+        'HRP'
+        'ABBV' 
+        'PFI' 
+        'PF'
+        'SG' 
+        'ABBVV' 
+        'GDSkills' !important;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
     }
 }
