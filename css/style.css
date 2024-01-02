@@ -562,7 +562,15 @@ footer {
         'PAWS'
         'TravelGlass' 
         'TBD' 
-        'UXSkills' !important;
+        'UXSkills';
+    }
+    .grid-item, .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
+        background-color: #ffffff;
+        min-width: 536px;
+        border: none;
+        padding: 24px;
+        font-size: 24px;
+        text-align: center;
     }
     .grid-container2 {
         display: grid;
@@ -575,7 +583,7 @@ footer {
         'PF'
         'SG' 
         'ABBVV' 
-        'GDSkills' !important;
+        'GDSkills';
         grid-template-rows: auto auto auto auto auto auto auto auto auto;
         grid-template-columns: 1fr;
     }
