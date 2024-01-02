@@ -479,11 +479,10 @@ footer {
 }
 .project-card-bottom {
     background-color: white;
-    width: 488px;
+    width: auto;
     align-self: stretch; 
     border-bottom-left-radius: 8px; 
     border-bottom-right-radius: 8px;
-    justify-content: space-between; 
     align-items: center; 
     padding: 24px;
 }
@@ -492,15 +491,28 @@ footer {
     align-items: center; 
     display: flex;
 }
-.grid-container {
+.item1 { grid-area: CCftA; }
+.item2 { grid-area: SampleGenius; }
+.item3 { grid-area: PAWS; }
+.item4 { grid-area: TravelGlass; }
+.item5 { grid-area: TBD; }
+.item6 { grid-area: UXSkills; }
+
+.grid-container1 {
     display: grid;
+    grid-template-areas:
+  'CCftA SampleGenius PAWS'
+  'TravelGlass TBD UXSkills';
     grid-template-columns: auto auto auto;
+    grid-gap: 24px;
     background-color: #ffffff;
     padding-left: 48px;
     padding-right: 48px;
 }
-.grid-item {
+
+.grid-item, .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14, .item15 {
     background-color: #ffffff;
+    width: 536px;
     border: none;
     padding: 24px;
     font-size: 24px;
@@ -509,7 +521,7 @@ footer {
 
 .image-container {
     width: 100%;
-    height: 312px;
+    height: 350px;
     overflow: hidden;
 }
   
@@ -517,4 +529,43 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.item7 { grid-area: OPTO; }
+.item8 { grid-area: LA; }
+.item9 { grid-area: HRP; }
+.item10 { grid-area: ABBV; }
+.item11 { grid-area: PFI; }
+.item12 { grid-area: PF; }
+.item13 { grid-area: SG; }
+.item14 { grid-area: ABBVV; }
+.item15 { grid-area: GDSkills; }
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+  'OPTO LA HRP'
+  'ABBV PFI PF'
+  'SG ABBVV GDSkills';
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+@media only screen and (max-width:600){
+    .grid-container1 {
+        display: grid;
+        grid-template-areas:
+        'CCftA'
+        'SampleGenius'
+        'PAWS'
+        'TravelGlass' 
+        'TBD' 
+        'UXSkills';
+        grid-template-rows: 512px 512px 512px 512px 512px 512px;
+        grid-template-columns: auto;
+        background-color: #ffffff;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
 }
